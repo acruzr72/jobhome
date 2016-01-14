@@ -16,3 +16,18 @@ Route::get('/', [
 		'as' 	=> 'home',
 		'uses'	=> 'jobPosController@home'
 	]);
+
+Route::get('/contacto', [
+
+		'as' 	=> 'contacto',
+		'uses'	=> 'JobPosController@contacto'
+	]);
+
+
+Route::get('/acerca', [
+
+		'as' 	=> 'acerca',
+		'uses'	=> 'JobPosController@acerca'
+	]);
+
+

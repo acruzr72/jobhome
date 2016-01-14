@@ -6,31 +6,9 @@
                 <p>¡Bienvenido! Puedes comenzar a buscar vacantes usando el formulario de la derecha o continuar buscando abajo.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                            dui.</p>
-                        <p><a class="btn btn-primary" href="#" role="button">Ver más »</a>
-                        </p>
-                    </div>
-                    <!--/span-->
-                    <div class="col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                            dui.</p>
-                        <p><a class="btn btn-primary" href="#" role="button">Ver más »</a>
-                        </p>
-                    </div>
-                    <!--/span-->
-                    <div class="col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                            dui.</p>
-                        <p><a class="btn btn-primary" href="#" role="button">Ver más »</a>
-                        </p>
-                    </div>
-                    <!--/span-->
-                    
+                @foreach ($vacantepost as $value) 
+                         @include('partials/postItem',compact('vacantepost'))     
+                @endforeach    
                 </div>
                 <div class="row botoncito" text-align="right">
                     <br>

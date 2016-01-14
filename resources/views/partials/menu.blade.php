@@ -13,6 +13,10 @@
                 <ul class="nav navbar-nav">
                     <li @if(Route::is('home')) class="active" @endif><a href="{{ route('home') }}">Inicio</a>
                     </li>
+                    <li  @if(Route::is('acerca')) class="active" @endif><a href="{{ route('acerca') }}">Acerca</a>
+                    </li>
+                    <li  @if(Route::is('contacto')) class="active" @endif><a href="{{ route('contacto') }}">Contacto</a>
+                    </li>
                 </ul>
                  @include('layout/login')
             </div>
